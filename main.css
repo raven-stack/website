@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --cyjan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --grey: hsl(204, 43%, 93%);
+    --blue: hsl(218, 22%, 67%);
+    --white: hsl(255, 100%, 100%);
+    --black: hsl(40, 5%, 0%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    font-size: 2em;
+    max-width: 1440px;
+    
+}
+
+.box1 {
+    background: var(--white);
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+
+    
+}
+
+.h1 {
+    color: var(--cyjan);
+}
+.h {
+    color: var(--yellow);
+}
+.p {
+    color: var(--blue);
+}
+
+.p2 {
+    color: var(--blue);
+}
+
+.box2 {
+    display: flex;
+    color: var(--white);
+}
+
+.child1 {
+    background: var(--cyjan);
+    width: 50%;
+    height: 400px;
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.child2 {
+    background: hsl(179, 45%, 62%);
+    width: 50%;
+    height: 400px;
+    padding-top: 40px;
+    padding-left: 40px;
+
+}
+
+button {
+    width: 80%;
+    height: 80px;
+    background: var(--yellow);
+    color: var(--white);
+    font-size: 1em;
+    border-radius: 10px;
+    border-color: var(--yellow);
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 10px hsl(179, 73%, 25%);
+
+}
+
+.twins {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .box2 {
+        flex-direction: column;
+    }
+    .child1,
+    .child2 {
+        width: 100%;
+    }
+}
